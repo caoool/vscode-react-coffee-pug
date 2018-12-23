@@ -1,10 +1,10 @@
 {
-	"fileTypes": ["js", "jsx", "ts", "tsx"],
+	"fileTypes": ["js", "jsx", "ts", "tsx", "coffee"],
 	"injectionSelector": "L:source -comment -string",
 	"patterns": [
 		{
 			"contentName": "react.pug",
-			"begin": "pug\\s*(`)",
+			"begin": "pug\\s*((`)|(\"\"\"))",
 			"beginCaptures": {
 				"1": {
 					"name": "entity.name.function.tagged-template.ts",
@@ -25,9 +25,23 @@
 				},
 				"3": {
 					"name": "punctuation.definition.string.template.begin.js string.template.js"
+				},
+				"4": {
+					"name": "entity.name.function.tagged-template.coffee",
+					"patterns": [
+						{
+							"include": "source.coffee#function-call"
+						},
+						{
+							"match": "[sS][tT][yY][lL][eE][dD]"
+						},
+						{
+							"include": "source.coffee#expression"
+						}
+					]
 				}
 			},
-			"end": "\\s*(`)",
+			"end": "\\s*((`)|(\"\"\")",
 			"endCaptures": {
 				"0": {
 					"name": "punctuation.definition.string.template.end.js string.template.js"

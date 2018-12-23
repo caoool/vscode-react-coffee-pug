@@ -1,14 +1,13 @@
 {
-    "name": "vscode-react-pug",
-    "displayName": "vscode-react-pug",
-    "description": "Syntax highlighting for pug (babel-plugin-transform-react-pug)",
-    "version": "0.0.2",
-    "publisher": "kaminaly",
-    "icon": "logo.png",
+    "name": "vscode-react-coffee-pug",
+    "displayName": "vscode-react-coffee-pug",
+    "description": "Syntax highlighting for pug in coffee (babel-plugin-transform-react-pug)",
+    "version": "0.0.1",
+    "publisher": "caoool",
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/kaminaly/vscode-react-pug.git"
+        "url": "https://github.com/caoool/vscode-react-coffee-pug.git"
     },
     "engines": {
         "vscode": "*"
@@ -26,7 +25,8 @@
                     "source.ts",
                     "source.jsx",
                     "source.js.jsx",
-                    "source.tsx"
+                    "source.tsx",
+                    "source.coffee"
                 ],
                 "embeddedLanguages": {
                     "react.pug": "jade"
