@@ -3,7 +3,8 @@
     "displayName": "vscode-react-coffee-pug",
     "description": "Syntax highlighting for pug in coffee (babel-plugin-transform-react-pug)",
     "version": "0.0.1",
-    "publisher": "caoool",
+    "publisher": "LoopCow",
+    "icon": "logo.png",
     "license": "MIT",
     "repository": {
         "type": "git",
